@@ -1,7 +1,129 @@
 <!DOCTYPE html>
+        <!-- comments like this -->   
 <html lang="en">
     <head>
         <title>Here is a title :)</title>
+        <!-- Meta tags for use by Google when searching your page for content tags to display webpage to search users-->
+        <meta name="Learning html" content="Examples of various html commands for use in later projects">
+    </head>
+    <body>
+        <!-- header, footer, aside, nav, main, section, article, and details are all ways to split up different page parts, making it easier to customize -->
+        <header id="main-header">
+            <h2>This is a WIP html file using GitBash, VSC, and GitHub</h2>
+        </header>
+        <a href="toDoList.html">To Do</a>
+        <p> <!-- a href lets you link to outside websites and puts a link to them. a href also lets you link to other files and folders for the project, more on that on line 135 -->
+            GitHub: <a href="https://github.com/JakInFour" target = '_blank'>JakInFour</a>
+        </p>
+
+        <p>
+        <!-- By using 'Lorem', it autofills in some placeholder text. Length can be changed. Ex. 'Lorem5' will output a Lorem with 5 words -->
+            Lorem ipsum dolor, sit consectetur adipisicing elit. Fugiat, sunt!
+        </p>
+        <!-- these are unordered lists, ul makes a bulletpoint list. There are also ordered lists using ol instead of ul, ol puts numbers instead of bullets-->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <!-- Tables are -->
+        <table>
+            <!-- captions are like titles for tables-->
+            <caption><strong>Random Information Here</strong></caption>
+            <!-- thead begins the table, then tr are the categories listed at the top, tbody is the body, and td are like the details that get filled into the table -->
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    </th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td>JakInFour</td>
+                        <td>email@email.em</td>
+                        <td>Here is age</td>
+                    </tr>
+                    <tr>
+                        <td>JakInFour</td>
+                        <td>email@email.em</td>
+                        <td>Here is age</td>
+                    </tr>
+                    <tr>
+                        <td>JakInFour</td>
+                        <td>email@email.em</td>
+                        <td>Here is age</td>
+                    </tr>
+                </tbody>
+        </table>
+        <!-- br provides a break of a bit of whitespace, hr places a nice horizontal line down-->
+        <br>
+        <hr>
+        <br>
+        <!--Forms are just what they sound like. Action says what to link the entries to (usually a php file). Method should normally just be POST (???) -->
+        <form action="formfill.txt" method="POST">
+            <div>
+                <label>First Name:</label>
+                <input type="text" name="firstName">
+                <!-- These first two are rather easy, type sets what type of form it is, labels are what show up for text before the box, name is to call on it later -->
+            </div>
+            <br>
+            <div>
+                <label>Last Name:</label>
+                <input type="text" name="lastName">
+            </div>
+            <br>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email">
+                <!-- email tells the browser that you can try to autofill the email into this selection -->
+            </div>
+            <br>
+            <div>
+                <label>Phone:</label>
+                <input type="phone" name="" id="phone">
+                <!-- phone is like email but for phone numbers-->
+            </div>
+            <br>
+            <div>
+                <label>Message:</label>
+                <!-- textarea makes the box that allows you to drag and resize the text box. Useful for long messages, like for feedback form pages.-->
+                <textarea name="Message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Groovy?</label>
+                <select name="Groovy?">
+                    <!-- Options are what they seem to be, they are used in the 'select' option instead of 'input', this allows the user to pick one of the options from the drop down box -->
+                    <option value="groovy">Yes</option>
+                    <option value="notGroovy">No</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="20">
+                <!-- number is for numbers, gives a box that has thearrows that will go through numbers when clicked. Value is a generic value that comes on there at load. Could use placeholder instead and it would be a greyed out entry -->
+            </div>
+            <br>
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+                <!-- date gives the user the ability to select dates using mm/dd/yyyy format and lets them use the calender to select the date -->
+            </div>
+            <br>
+            <div>
+                <input type="submit" name="submit" value="Submit">
+                <!-- makes that submit button. value changes what is in the box of the button -->
+            </div>
+        </form>
+        <!-- you can also use checkbox for the type (among others I'd bet) and that will let you check off the items. This would make a cool to do list system for school -->
+
+        <!-- Images -->
+        <!-- style is for making the page look better and is super versatile-->
+        <!-- width and height are what they seem to be, border-radius will take hard corners off of the img, >= 50% of the width or height will make is a circle -->
+        <!-- float will set where the img is on the page, margins are exactly what they seem, they put whitespace borders around the picture -->
         <style>
             img{
                 width: 100px;
@@ -11,13 +133,16 @@
                 margin-right: 10px;
             }
         </style>
-    </head>
-    <body>
-        <!-- somehow move the picture somewhere else-->    
-        <img src="discpfp.jpg"
-        alt="generic profile picture">
-        <h2>This is a WIP html file using GitBash, VSC, and GitHub</h2>
-        <p>GitHub: JakInFour <a href = "https://github.com/JakInFour" target = '_blank'></a></p>
-        <p>Lorem ipsum dolor, sit consectetur adipisicing elit. Fugiat, sunt!</p>
+        <br>
+        <!-- a href can also be used to call upon images (and other files I assume) in the project. If you need to select folder beforehand use folder/file.extension -->
+        <a href="img/discpfp.jpg">
+            <img src="img/discpfp.jpg"
+            alt="generic profile picture">
+        </a>
+
+        <!-- Quotations/citations are for the pages that need to be able to cite stuff, this doesn't show up on page using blockquotes, abbr is for abbreviations, this will show up as a line under the word and will display title when hovered -->
+        <blockquote cite="http://google.com">Lorem, ipsum.</blockquote>
+        <p> The <abbr title="Nintendo 64">N64</abbr> is old as heck.</p>
+        <p><cite>Here is citation.</cite> Here is not.</p>
     </body>
 </html>

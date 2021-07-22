@@ -1,0 +1,29 @@
+#main-header{
+    color:whitesmoke;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    float: top;
+}
+input.bigCheck {
+width: 18px;
+height: 18px;
+}
+.task{
+    width:125px;
+    height:20px; 
+}
+/* the amount of pain I have from the white box around everything... is immense */
+.container{
+    background-color: aqua;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6m;
+    width: 100%;
+    border-left: 100px aqua solid;
+    border-top:100px aqua solid;
+    border-bottom:100px aqua solid;
+    border-right:100px aqua solid;
+
+}

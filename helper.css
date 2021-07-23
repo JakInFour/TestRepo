@@ -1,19 +1,46 @@
 #main-header{
     color:whitesmoke;
-    padding: 10px;
+    padding: 5px;
     background-color: black;
     text-align: center;
     float: top;
+}
+a{
+    text-decoration: none;
+    color: #000
+}
+a:hover{
+    color:red;
+}
+
+a:visited{
+    color: black;
+}
+.button{
+    background-color:#333;
+    color:#fff;
+    padding: 10px 15px;
+    border: none;
 }
 input.bigCheck {
 width: 18px;
 height: 18px;
 }
+
+/* Below here are the page-specific code, above can be reused in different code as it looks ok */
+.form{
+    padding:5px;
+}
 .task{
-    width:125px;
+    width:100%;
     height:20px; 
+    text-align: left;
+}
+.task input[type="checkbox"] {
+    padding:3px;
 }
 /* the amount of pain I have from the white box around everything... is immense */
+/* fixed the right side whitespace, all others are still there, idk what is wrong */
 .container{
     background-color: aqua;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -21,9 +48,7 @@ height: 18px;
     font-weight: normal;
     line-height: 1.6m;
     width: 100%;
-    border-left: 100px aqua solid;
-    border-top:100px aqua solid;
-    border-bottom:100px aqua solid;
-    border-right:100px aqua solid;
+    height: 100%;
+    border:10px aqua solid;
 
 }

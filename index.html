@@ -1,6 +1,8 @@
 <!DOCTYPE html>
         <!-- comments like this -->   
 <html lang="en">
+    <!-- links the .css and this sheet together -->
+    <link rel="stylesheet" href="indexcss.css">
     <head>
         <title>Here is a title :)</title>
         <!-- Meta tags for use by Google when searching your page for content tags to display webpage to search users-->
@@ -62,37 +64,37 @@
         <hr>
         <br>
         <!--Forms are just what they sound like. Action says what to link the entries to (usually a php file). Method should normally just be POST (???) -->
-        <form action="formfill.txt" method="POST">
-            <div>
+        <form action="formfill.txt" method="POST" class="new-form">
+            <div class = my-form>
                 <label>First Name:</label>
                 <input type="text" name="firstName">
                 <!-- These first two are rather easy, type sets what type of form it is, labels are what show up for text before the box, name is to call on it later -->
             </div>
             <br>
-            <div>
+            <div class = my-form>
                 <label>Last Name:</label>
                 <input type="text" name="lastName">
             </div>
             <br>
-            <div>
+            <div class = my-form>
                 <label>Email:</label>
                 <input type="email" name="email">
                 <!-- email tells the browser that you can try to autofill the email into this selection -->
             </div>
             <br>
-            <div>
+            <div class = my-form>
                 <label>Phone:</label>
                 <input type="phone" name="" id="phone">
                 <!-- phone is like email but for phone numbers-->
             </div>
             <br>
-            <div>
+            <div class = my-form>
                 <label>Message:</label>
                 <!-- textarea makes the box that allows you to drag and resize the text box. Useful for long messages, like for feedback form pages.-->
                 <textarea name="Message"></textarea>
             </div>
             <br>
-            <div>
+            <div class = my-form>
                 <label>Groovy?</label>
                 <select name="Groovy?">
                     <!-- Options are what they seem to be, they are used in the 'select' option instead of 'input', this allows the user to pick one of the options from the drop down box -->
@@ -101,20 +103,20 @@
                 </select>
             </div>
             <br>
-            <div>
+            <div class = my-form>
                 <label>Age:</label>
                 <input type="number" name="age" value="20">
                 <!-- number is for numbers, gives a box that has thearrows that will go through numbers when clicked. Value is a generic value that comes on there at load. Could use placeholder instead and it would be a greyed out entry -->
             </div>
             <br>
-            <div>
+            <div class = my-form>
                 <label>Birthday:</label>
                 <input type="date" name="birthday">
                 <!-- date gives the user the ability to select dates using mm/dd/yyyy format and lets them use the calender to select the date -->
             </div>
             <br>
-            <div>
-                <input type="submit" name="submit" value="Submit">
+            <div class = my-form>
+                <input type="submit" name="submit" value="Submit" class="button">
                 <!-- makes that submit button. value changes what is in the box of the button -->
             </div>
         </form>

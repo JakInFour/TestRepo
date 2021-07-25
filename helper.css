@@ -56,10 +56,9 @@ height: 18px;
 }
 .task input[type="checkbox"] {
     padding:3px;
+    position:relative;
 }
-.fix-m,e{
-    color:white;
-}
+
 .container{
     background-color: rgb(16, 42, 189);
     font-family:Verdana, Geneva, Tahoma, sans-serif;

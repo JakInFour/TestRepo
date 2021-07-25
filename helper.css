@@ -5,23 +5,40 @@
     text-align: center;
     float: top;
 }
+
 a{
     text-decoration: none;
     color: #000
 }
+
 a:hover{
     color:red;
 }
 
 a:visited{
-    color: black;
+    color: white;
 }
+/* gets rid of whitespace around edges of site */
+body {
+    margin: 0;
+  }
+
 .button{
     background-color:#333;
     color:#fff;
     padding: 10px 15px;
     border: none;
+    border-radius: 6px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
 }
+
+.button:hover{
+    cursor:pointer;
+    background-color: red
+}
+
 input.bigCheck {
 width: 18px;
 height: 18px;
@@ -40,15 +57,14 @@ height: 18px;
     padding:3px;
 }
 /* the amount of pain I have from the white box around everything... is immense */
-/* fixed the right side whitespace, all others are still there, idk what is wrong */
 .container{
-    background-color: aqua;
+    background-color: rgb(16, 42, 189);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.6m;
     width: 100%;
     height: 100%;
-    border:10px aqua solid;
+    border:10px #222 solid;
 
 }

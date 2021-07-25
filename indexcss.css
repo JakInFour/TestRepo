@@ -1,6 +1,7 @@
 a{
     color: #000
 }
+
 a:hover{
     color:red;
 }
@@ -8,13 +9,29 @@ a:hover{
 a:visited{
     color: black;
 }
+body {
+    margin: 0;
+  }
 .button{
     background-color:#333;
     color:#fff;
     padding: 10px 15px;
     border: none;
-
+    border-radius:6px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
 }
+
+.button:hover{
+    cursor:pointer;
+    background-color: red
+}
+
+.clearfix{
+    clear:both;
+}
+
 .main-header{
     color:black;
     padding: 10px;
@@ -25,10 +42,69 @@ a:visited{
 .new-form{
     padding:10px
 }
+
 .my-form label{
     display:block;
+    float:top;
 }
+
 .my-form input[type="text"] {
+    float:top;
     padding:5px;
     width:85px
+}
+
+#main-block{
+    float:left;
+    width:70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float:right;
+    width:30%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pbox{
+    width: 800px;
+    height: 400px;
+    border: 1px solid black;
+    margin-top: 30px;
+    position: relative;
+    background-image:url(../GitApp/img/purpletube.jpg);
+    background-position: center center;
+}
+/* position of the headings inside pbox can be changed relative to the box! pretty cool! */
+.pbox h1{
+    position: absolute;
+    top:100px;
+    right:25px;
+}
+
+.pbox h2{
+    position:absolute;
+    bottom:45px;
+    left: 200px;
+}
+
+.fix-me{
+    position:fixed;
+    top:200px;
+    right:0px;
+}
+
+.my-list li:first-child{
+    background:red;
+}
+.my-list li:last-child{
+    background: blue;
+}
+/* can do numbers, evens, or odds */
+.my-list li:nth-child(even){
+    background: yellowgreen;
 }

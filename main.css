@@ -1,0 +1,33 @@
+a{
+    color: #fff
+}
+
+a:hover{
+    color:red;
+}
+
+a:visited{
+    color: black;
+}
+body {
+    margin: 0;
+  }
+.button{
+    background-color:#333;
+    color:#fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius:6px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:hover{
+    cursor:pointer;
+    background-color: red
+}
+
+.clearfix{
+    clear:both;
+}

@@ -1,3 +1,11 @@
+html {
+    background: url(https://cdn.wallpapersafari.com/42/28/Maejso.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #main-header{
     color:whitesmoke;
     padding: 5px;
@@ -59,13 +67,17 @@ height: 18px;
 }
 
 .container{
-    background-color: rgb(16, 42, 189);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    font-weight: normal;
-    border:10px #222 solid;
-    padding-bottom: 20px; 
+    font-weight: normal;  
 }
+
 .todo{
     color:white;
+}
+#sidebar{
+    width:5%;
+    background-color: #333;
+    color: #fff;
+    box-sizing: content-box;
 }

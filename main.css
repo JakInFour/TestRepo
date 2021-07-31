@@ -1,12 +1,12 @@
-a{
-    color: #fff
+#link{
+    color: white;
+    text-decoration:none;
 }
-
-a:hover{
+#link:hover{
     color:red;
+    cursor:pointer;
 }
-
-a:visited{
+link:visited{
     color: black;
 }
 body {
@@ -14,7 +14,7 @@ body {
   }
 .button{
     background-color:#333;
-    color:#fff;
+    color:white;
     padding: 10px 15px;
     border: none;
     border-radius:6px;
@@ -30,4 +30,8 @@ body {
 
 .clearfix{
     clear:both;
+}
+
+p{
+    background-color: maroon;
 }

@@ -1,14 +1,15 @@
-a{
-    color: #fff
+#link{
+    color: white;
+    text-decoration:none;
 }
-
-a:hover{
+#link:hover{
     color:red;
+    cursor:pointer;
+}
+link:visited{
+    color: orange;
 }
 
-a:visited{
-    color: black;
-}
 body {
     margin: 0;
   }

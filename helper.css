@@ -6,17 +6,16 @@
     float: top;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-a:hover{
-    color:red;
-}
-
-a:visited{
+#link{
     color: white;
+    text-decoration:none;
+}
+#link:hover{
+    color:red;
+    cursor:pointer;
+}
+link:visited{
+    color: orange;
 }
 /* gets rid of whitespace around edges of site... sort of, the bottom is a headache*/
 body {

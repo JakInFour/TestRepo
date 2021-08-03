@@ -8,7 +8,7 @@
     <body>
         <div class="container">
             <header id="main-header">
-                <h1>Overly-Complex To Do List</h1>
+                <h1>Overly-Complex To Do List </h1>  
             </header>
             <br>
             <a id='link' href="main.html" target='_blank' class='a'>Main Page</a>
@@ -18,9 +18,10 @@
             <p class="todo">Things that I have to do for today:</p>
             </div>
             <hr>
+            <!-- main form with all daily tasks and their checkboxes -->
             <form action="formfill.txt" method="POST" class="form">
                 <div class="task">
-                    <label>Pay Justice for SS</label>
+                    <label>Wake Up</label>
                     <input type="checkbox" title="Task" class="bigCheck">
                 </div>
                 <br>
@@ -43,7 +44,7 @@
                     <label>Do 1h <a id='link' href="https://moodle.umt.edu/" style=color:limegreen;>homework</label></a>
                     <input type="checkbox" title="Task" class="bigCheck">
                 </div>
-                <br>
+                <br class='break'>
                 <div class="task">
                     <label>Make food</label>
                     <input type="checkbox" title="Task" class="bigCheck">
@@ -81,8 +82,12 @@
                 <hr>
             <div class='clearfix'></div>
             </form>
-                <!--<input type="submit" name="submit" value="Submit">-->
+        <!-- button to launch steam game, addme: add way to check if all boxes have been checked before being able to launch game somehow -->
             <a class="button" href="steam://rungameid/774171">Finished!</a>
+        </div>
+        <!-- add in the Pikachu gif -->
+        <div>
+            <img class=topPic src="img/pikaConstruct.gif" alt="Pikachu Under Construction"/>
         </div>
     </body>
 </html>

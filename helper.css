@@ -81,3 +81,12 @@ height: 18px;
     color: #fff;
     box-sizing: content-box;
 }
+.break{
+    width:20px
+}
+.topPic{
+    position:absolute;
+    left: 300px;
+    top: 80px;
+    border:none;
+}
